@@ -1,0 +1,93 @@
+[
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          { "internalType": "bytes32", "name": "appId", "type": "bytes32" },
+          { "internalType": "string", "name": "name", "type": "string" },
+          { "internalType": "string", "name": "tagLine", "type": "string" },
+          { "internalType": "string", "name": "description", "type": "string" },
+          { "internalType": "string", "name": "icon", "type": "string" },
+          { "internalType": "string", "name": "apkFile", "type": "string" },
+          { "internalType": "string", "name": "iosFile", "type": "string" },
+          { "internalType": "string[]", "name": "images", "type": "string[]" }
+        ],
+        "indexed": false,
+        "internalType": "struct DeStore.App",
+        "name": "RegisteredApp",
+        "type": "tuple"
+      }
+    ],
+    "name": "NewApp",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "string", "name": "_tagLine", "type": "string" },
+      { "internalType": "string", "name": "_description", "type": "string" },
+      { "internalType": "string", "name": "_icon", "type": "string" },
+      { "internalType": "string", "name": "_apkFile", "type": "string" },
+      { "internalType": "string", "name": "_iosFile", "type": "string" },
+      { "internalType": "string[]", "name": "_images", "type": "string[]" }
+    ],
+    "name": "addApplication",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "_appId", "type": "bytes32" }
+    ],
+    "name": "getAppDetails",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "bytes32", "name": "appId", "type": "bytes32" },
+          { "internalType": "string", "name": "name", "type": "string" },
+          { "internalType": "string", "name": "tagLine", "type": "string" },
+          { "internalType": "string", "name": "description", "type": "string" },
+          { "internalType": "string", "name": "icon", "type": "string" },
+          { "internalType": "string", "name": "apkFile", "type": "string" },
+          { "internalType": "string", "name": "iosFile", "type": "string" },
+          { "internalType": "string[]", "name": "images", "type": "string[]" }
+        ],
+        "internalType": "struct DeStore.App",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "_appId", "type": "bytes32" }
+    ],
+    "name": "getAppImages",
+    "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getApplications",
+    "outputs": [
+      { "internalType": "bytes32[]", "name": "", "type": "bytes32[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUserApplications",
+    "outputs": [
+      { "internalType": "bytes32[]", "name": "", "type": "bytes32[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

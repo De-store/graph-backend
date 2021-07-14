@@ -1,0 +1,23 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: DeStore
+    network: rinkeby
+    source:
+      address: "0x45F44aa52B051bc67C612685bA1dDb41C507ac9a"
+      abi: DeStore
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.2
+      language: wasm/assemblyscript
+      entities:
+        - NewApp
+      abis:
+        - name: DeStore
+          file: ./abis/DeStore.json
+      eventHandlers:
+        - event: NewApp((bytes32,string,string,string,string,string,string,string[]))
+          handler: handleNewApp
+      file: ./src/mapping.ts
