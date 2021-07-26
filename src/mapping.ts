@@ -5,12 +5,12 @@ import { ExampleEntity } from "../generated/schema"
 export function handleNewApp(event: NewApp): void {
   // Entities can be loaded from the store using a string ID; this ID
   // needs to be unique across all entities of the same type
-  let entity = ExampleEntity.load(event.transaction.from.toHex())
+  let entity = ExampleEntity.load(event.params.RegisteredApp.appId.toHex())
 
   // Entities only exist after they have been saved to the store;
   // `null` checks allow to create entities on demand
   if (entity == null) {
-    entity = new ExampleEntity(event.transaction.from.toHex())
+    entity = new ExampleEntity(event.params.RegisteredApp.appId.toHex())
 
     // Entity fields can be set using simple assignments
     entity.count = BigInt.fromI32(0)
@@ -20,8 +20,15 @@ export function handleNewApp(event: NewApp): void {
   entity.count = entity.count + BigInt.fromI32(1)
 
   // Entity fields can be set based on event parameters
+  entity.Owner = event.transaction.from
   entity.RegisteredApp_appId = event.params.RegisteredApp.appId
   entity.RegisteredApp_name = event.params.RegisteredApp.name
+  entity.RegisteredApp_tagLine = event.params.RegisteredApp.tagLine
+  entity.RegisteredApp_description = event.params.RegisteredApp.description
+  entity.RegisteredApp_icon = event.params.RegisteredApp.icon
+  entity.RegisteredApp_apkFile = event.params.RegisteredApp.apkFile
+  entity.RegisteredApp_iosFile = event.params.RegisteredApp.iosFile
+  entity.RegisteredApp_images = event.params.RegisteredApp.images
 
   // Entities can be written to the store with `.save()`
   entity.save()

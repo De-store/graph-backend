@@ -1,6 +1,13 @@
 type ExampleEntity @entity {
   id: ID!
   count: BigInt!
+  Owner: Bytes!
   RegisteredApp_appId: Bytes! # bytes32
   RegisteredApp_name: String! # string
+  RegisteredApp_tagLine: String! # string
+  RegisteredApp_description: String! # string
+  RegisteredApp_icon: String! # string
+  RegisteredApp_apkFile: String! # string
+  RegisteredApp_iosFile: String! # string
+  RegisteredApp_images: [String!] # string
 }

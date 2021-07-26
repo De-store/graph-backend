@@ -4,7 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ destore/backend",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ surajsingla333/de-store-graph",
     "create-local": "graph create --node http://localhost:8020/ destore/backend",
     "remove-local": "graph remove --node http://localhost:8020/ destore/backend",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 destore/backend"

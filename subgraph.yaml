@@ -1,16 +1,19 @@
-specVersion: 0.0.1
+specVersion: 0.0.2
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: DeStore
-    network: rinkeby
+    network: mumbai
     source:
-      address: "0x45F44aa52B051bc67C612685bA1dDb41C507ac9a"
+      address: "0x3447eFaA7A0a95B44c794214b38D017FdD97A8f8"
+    # network: rinkeby
+    # source:
+    #   address: "0x45F44aa52B051bc67C612685bA1dDb41C507ac9a"
       abi: DeStore
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.2
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
         - NewApp
