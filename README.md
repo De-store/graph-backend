@@ -6,7 +6,7 @@
 
 This repository is the basic Graph project which is used to query data from the blockchain using smart contract events.
 
-**The Graph** helps us to query the data on bokchain using events hence giving structure to a somewhat unstructured data.<br> By quering the blockchain data, it not only helps in faster and efficient results it also helps the developers to completely focus on the `smart contract` logic without worring about fetching the data.
+**The Graph** helps us to query the data on the blockchain using events hence giving structure to somewhat unstructured data.<br> By querying the blockchain data, not only helps in faster and efficient results it also helps the developers to completely focus on the `smart contract` logic without worrying about fetching the data.
 
 This project is used to query all the applications which are/will be published on **DeStore**.  
 
@@ -14,11 +14,11 @@ This project is used to query all the applications which are/will be published o
 
 ### Website - dApp
 
-A completely decentralized website which will be used by developers to publish and manage their applications and helps used to get the *DeStore mobile app*.<br>[This](https://github.com/De-store/frontend) is the repository that contains the website codebase<br>`https://github.com/De-store/frontend`
+A completely decentralized website which will be used by developers to publish and manage their applications and helps users to get the *DeStore mobile app*.<br>[This](https://github.com/De-store/frontend) is the repository that contains the website codebase<br>`https://github.com/De-store/frontend`
 
 ### Mobile app
 
-DeStore also has a mobile application which will help users to view all the listed apps and install them on their devices.<br>[This](https://github.com/De-store/mobile-app) is the repository that contains the mobile app codebase.<br>`https://github.com/De-store/mobile-app`
+DeStore also has a mobile application that will help users to view all the listed apps and install them on their devices.<br>[This](https://github.com/De-store/mobile-app) is the repository that contains the mobile app codebase.<br>`https://github.com/De-store/mobile-app`
 
 ## Useful links
 
