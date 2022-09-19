@@ -4,12 +4,18 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: DeStore
-    network: mumbai
+
+    network: evmos
     source:
-      address: "0x3447eFaA7A0a95B44c794214b38D017FdD97A8f8"
-    # network: rinkeby
-    # source:
-    #   address: "0x45F44aa52B051bc67C612685bA1dDb41C507ac9a"
+      address: "0x5a18b5D8703D4bBf53365582F50f031965fa1Deb"
+      startBlock: 5750702
+
+      # network: mumbai
+      # source:
+      #   address: "0x3447eFaA7A0a95B44c794214b38D017FdD97A8f8"
+      # network: rinkeby
+      # source:
+      #   address: "0x45F44aa52B051bc67C612685bA1dDb41C507ac9a"
       abi: DeStore
     mapping:
       kind: ethereum/events
