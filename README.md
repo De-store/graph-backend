@@ -25,6 +25,7 @@ DeStore also has a mobile application that will help users to view all the liste
 - **Live site**: https://sparkling-disk-9446.on.fleek.co/
 - **Smart contract (matic-mumbai)**: https://mumbai.polygonscan.com/address/0x3447eFaA7A0a95B44c794214b38D017FdD97A8f8
 - **Smart contract (evmos-testnet)**: https://evm.evmos.dev/address/0x5a18b5D8703D4bBf53365582F50f031965fa1Deb/transactions
+- **Smart contract (5ire-testnet)**: https://explorer.5ire.network/address/0x45F44aa52B051bc67C612685bA1dDb41C507ac9a (choose evm-chain)
 - **Mobile application build**: https://slate.host/_/data?cid=bafybeidowfkijlzebcpb7okajqy2zoapckpehogvuundeglelwd4alvxai
 - **The Graph (matic-mumbai)**: https://thegraph.com/legacy-explorer/subgraph/surajsingla333/de-store-graph
 - **The Graph (evmos testnet)**: https://26e8-103-69-24-112.ngrok.io/subgraphs/name/destore/backend/graphql
